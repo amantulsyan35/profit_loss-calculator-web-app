@@ -1,0 +1,138 @@
+.Stock-container {
+  background-color: #9db4c0;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  padding: 1em;
+  color: #e0fbfc;
+}
+
+.Stock-item-1 {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 0.5em;
+  height: auto;
+  padding: 1em;
+  background-color: #253237;
+}
+.Stock-item-2 {
+  display: grid;
+  grid-template-rows: 10% 90%;
+  grid-gap: 0.5em;
+  height: auto;
+  padding: 1em;
+  background-color: #253237;
+}
+
+.Stock1-item-1 {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  background-color: #c2dfe3;
+}
+
+.Stock1-item-1 a {
+  color: #253237;
+}
+
+.Stock1-item-2 {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+  height: auto;
+  text-align: left;
+}
+.Stock2-item-1 {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2dfe3;
+  color: #253237;
+}
+.Stock2-item-2 {
+  padding: 0.5em;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Stock2-item-2 img {
+  width: 100%;
+  height: 100;
+}
+
+.Form-group {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+}
+
+.Form-group label {
+  margin-bottom: 1em;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+}
+
+.Form-group input {
+  margin-bottom: 1em;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  padding: 1em;
+  outline: none;
+}
+
+.Check {
+  margin-top: 1em;
+  padding: 0.5em;
+  width: 25%;
+  outline: none;
+  border: none;
+}
+
+/* Responsive css */
+
+@media (max-width: 576px) {
+  .Stock-container {
+    margin-top: 2em;
+    grid-template-columns: 1fr;
+    grid-gap: 0.5em;
+    padding: 0.5em;
+  }
+
+  .Stock-item-1 {
+    grid-template-rows: 1fr;
+    padding: 0.5em;
+  }
+
+  .Stock-item-2 {
+    grid-template-rows: 1fr;
+    padding: 0.5em;
+  }
+
+  .Stock1-item-2 {
+    padding: 0.5em;
+  }
+
+  .Form-group {
+    width: 100%;
+  }
+
+  .Form-group input {
+    padding: 0.5em;
+    outline: none;
+  }
+
+  .Check {
+    width: 35%;
+  }
+}
